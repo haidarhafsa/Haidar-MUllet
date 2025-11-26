@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>R34 Chara dreamurr</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+   
+    <body>
+        <div class="login-box">
+            <h2>Login</h2>
+
+            <input type="text" id="username"
+            placeholder="username">
+            <input type="password" id="password"
+            placeholder="password>">
+
+            <button onclick="login()">masuk</button>
+
+            <p id="error"></p> 
+            
+        </div>
+
+         <script>
+            function login() {
+                const user =
+                document.getElementById("username").value;
+                const pass =
+                document.getElementById("password").value;
+
+                if(user === "Daniel pecinta bocil" && pass === "Pedofill"){
+
+                    window.location.href = "home.html";
+
+                }else{
+
+       document.getElementById("error").innerText = 
+       "username atau password salah!";
+
+                }
+                
+            }
+         </script>
+        
+    </body>
+</html>
+
